@@ -90,7 +90,7 @@ module LogStash
               end
           end
 
-          hash[field_name(tag)] = value
+          hash[field_name(tag) + "_Tag" + to_string(tag)] = value
         end
 
         hash
